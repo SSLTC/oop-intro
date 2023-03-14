@@ -19,6 +19,7 @@ class Beverage
     public string $color;
     public float $price;
     public string $temperature;
+    private static string $address = "Melkmarkt 9, 2000 Antwerpen";
 
     function __construct() 
     {
@@ -28,6 +29,11 @@ class Beverage
     public function getInfo(): String 
     {
         return "This beverage is $this->temperature and $this->color.";
+    }
+
+    public static function getAddress(): String 
+    {
+        return self::$address;
     }
 
     public function useConst() 
