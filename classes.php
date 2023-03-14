@@ -29,11 +29,18 @@ class Beverage
     {
         return "This beverage is $this->temperature and $this->color.";
     }
+
+    public function useConst() 
+    {
+        echo Beer::BARNAME;
+    }
 }
 
 $beverage = new Beverage();
 $beverage->color = "black";
 $beverage->price = 2;
+
 echo $beverage->getInfo();
 echo "<br>";
 echo $beverage->temperature;
+echo "<br>";

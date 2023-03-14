@@ -28,7 +28,7 @@ class Beer extends Beverage
         return $this->alcoholPercentage;
     }
 
-    public function __contruct(string $name, float $alcoholPercentage) 
+    function __contruct(string $name, float $alcoholPercentage) 
     {
         $this->temperature = "cold";
         $this->name = $name;
